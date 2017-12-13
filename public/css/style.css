@@ -1,0 +1,37 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.main-banner {
+    height: 400px;
+
+}
+
+.index-top-banner, footer {
+    width: 100%;
+    background-color: #DA251C;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.banner-container {
+    width: 100%;
+    height: 40%;
+}
+
+.banner {
+    height: 100%;
+    background-image: url(/images/DDD-Wales-Banner.png);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.panel {
+    background-color: #d9d9d9;
+    padding: 10px;
+    margin-top: 10%;
+}
