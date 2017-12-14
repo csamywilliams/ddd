@@ -2,19 +2,66 @@ html, body {
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    font-size: 62.5%;
+}
+
+ul, p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+h1 {
+    color: #DA251C;
+}
+
+h2 {
+    font-size: 22px;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #DA251C;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.content {
+    padding: 2% 0 ;
+}
+
+
+.icon {
+    height: 30px;
+    width: 30px;
+    padding: 0 1%;
+}
 
 .main-banner {
     height: 400px;
 
 }
 
-.index-top-banner, footer {
+.index-top-banner {
     width: 100%;
     background-color: #DA251C;
     height: 40px;
     color: white;
     text-align: center;
     padding-top: 1%;
+}
+
+.small-text {
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
 }
 
 .banner-container {
