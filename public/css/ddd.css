@@ -1,8 +1,35 @@
-.navbar {
-    margin-bottom: 0px;
-}
-
 .index-top-banner {
+	color:#da251c;
+	background-color:#fff;
 	padding-top:10px;
 	font-weight:bold;
+}
+
+.navbar {
+    margin-bottom: 0px;
+	color:white;
+	background-color:#da251c;
+	border: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #9d9d9d;
+}
+
+.banner-container {
+	float: left;
+    width: 100%;
+    height: 300px;
+    border-bottom: 3px solid red;
+}
+
+@media screen and (max-width: 990px) {
+	.banner-container {
+		    margin-bottom: 10px;
+			max-height:200px;
+	}	
 }
