@@ -18,7 +18,15 @@
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    color: #9d9d9d;
+    color: #8e1d1d;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #b12727;
 }
 
 .banner-container {
@@ -26,6 +34,12 @@
     width: 100%;
     height: 300px;
     border-bottom: 3px solid red;
+	margin-bottom:30px;
+}
+
+.logo {
+		height:90px;
+		padding:10px 0px;
 }
 
 .panel {
@@ -39,6 +53,10 @@
 	margin-top:0;
 	padding-left:20px;
 	font-weight:bold;
+	color:#da251c;
+}
+
+a {
 	color:#da251c;
 }
 
