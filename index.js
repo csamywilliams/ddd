@@ -13,26 +13,13 @@ router.use(function (req,res,next) {
 });
 
 router.get("/", function(req,res){
-  //res.sendFile(path + "index.html");
   res.render('pages/index');
 });
-  
-router.get("/about", function(req,res){
-  res.render('pages/about');
-});
 
-router.get("/sponsors", function(req,res){
-  res.render('pages/sponsors');
+router.get('/:client', (req, res) => {
+    var client = req.params.client;
+    res.render('pages/' + client);
 });
-
-router.get("/code-of-conduct", function(req,res){
-  res.render('pages/code-of-conduct');
-});
-
-router.get("/contact", function(req,res){
-  res.render('pages/contact');
-});
-  
   
 app.use("/", router);
 
