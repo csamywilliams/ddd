@@ -1,0 +1,14 @@
+[
+	{
+		"name": "SSDC",
+		"description": "This is a community for those who care and are proud of what they do. For those who are Developers, DBA's (Database Administrators), Testers, Dev Ops (Developer Operations), UX (User Experience) or UI (User Interface), regardless how experienced they are, who want to improve.",
+		"link": "https://www.meetup.com/Swansea-Software-Development-Meetup/",
+		"image": "ssdc.png"
+	},
+	{
+		"name": "SwanseaCon",
+		"description": "SwanseaCon is an agile development & software craftsmanship conference.",
+		"link": "http://www.swanseacon.co.uk",
+		"image": "swanseacon.png"
+	}
+]

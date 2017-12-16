@@ -107,3 +107,12 @@ a {
 	}	
 }
 
+
+.sponsor {
+    margin: 25px 0px;
+    padding: 30px 0px 10px 0px;
+}
+
+.sponsor img {
+    max-width: 400px;
+}

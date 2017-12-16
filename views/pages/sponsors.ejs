@@ -5,8 +5,34 @@
          <h1>Sponsors</h1>
          <p>Developer Day would not be possible without the fantastic support from our sponsors. The Developer Day team are looking for more sponsors to help out with financial and other assistance.</p>
          <p>Should you know of other organisations or companies who may be interested in sponsoring Developer Day you can get in touch with us via the<span>&nbsp;</span><a href="/contact">contact page</a>.</p>
+		 
+		 <div class="sponsor-list">
+		 
+		 <% if(sponsors.length > 0) { %>
+		 <h2>Special thanks to our sponsors</h2>
+		 
+		 <% } %>
+		 
+		  <% for(let i = 0; i < sponsors.length; i++) { %>
+        <div class="sponsor">
+		
+            <a href="<%= sponsors[i].link %>"><img src="images/sponsors/<%= sponsors[i].image %>" class="sponsor-logo"></a>
+		
+		
+            <h2><%= sponsors[i].name %></h2>
+			<p><%= sponsors[i].description %></p>
+			<p><a href="<%= sponsors[i].link %>" target="_blank"><%= sponsors[i].link %></a></p>
+			
+        </div>
+    <% } %>
+		 </div>
       </div>
+	  
+	  
       <% include ../partials/twitter-sidebar %>
+	  
+	  
+	  
    </section>
 </main>
 <% include ../partials/footer %>

@@ -41,8 +41,9 @@ function getConfig(file){
 
 router.get('/', function(req, res, next) {
 	let siteInfo = getConfig('config.json');
+	let sponsorInfo = getConfig('sponsors.json');
 	//console.log(siteInfo); //used to debug and see config being sent
-  res.render('pages/index', { ddd: siteInfo });
+  res.render('pages/index', { ddd: siteInfo, sponsors: sponsorInfo });
 });
 
 module.exports = router;
@@ -57,7 +58,9 @@ router.post('/form', function(req, res) {
 router.get('/:client', (req, res) => {
     let client = req.params.client;
 	let siteInfo = getConfig('config.json');
-    res.render('pages/' + client, { ddd: siteInfo });
+	let sponsorInfo = getConfig('sponsors.json');
+	//console.log(sponsorInfo);
+    res.render('pages/' + client, { ddd: siteInfo, sponsors: sponsorInfo });
 });
   
 app.use("/", router);
