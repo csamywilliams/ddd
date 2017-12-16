@@ -8,7 +8,14 @@
 
 .notification-bar {
 	 text-transform: uppercase;
+	 background-color:#fff;
 }
+
+.notification-bar {
+	background-color:white;
+}
+
+li a:hover {color:silver;}
 
 .navbar {
     margin-bottom: 0px;
@@ -21,9 +28,10 @@
     color: #fff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #8e1d1d;
+.navbar-nav>li>a:hover {
+    color: grey !important;
 }
+
 
 .navbar-inverse .navbar-toggle {
     border-color: #fff;

@@ -26,15 +26,53 @@
 </script>
 	  <%}%>
 	  
-	  <% if(ddd[0].banner != '') {%>
+<% if(ddd[0].banner != '') {%>
 	  <style>
 	  .banner {
      background-image: url(/images/<%= ddd[0].banner %>);
 }
 </style>
-	  
-	  
-	  <%}%>
+<%}%>
+
+<% if(ddd[0].brandcolor != '') {%>
+
+<style>
+footer, .navbar, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: <%= ddd[0].brandcolor %>;
+}
+
+.btn-primary {
+    background-color: <%= ddd[0].brandcolor %>;
+    border-color: <%= ddd[0].brandcolor %>;
+}
+
+.btn-primary:hover {
+    border-color: <%= ddd[0].brandcolor %>;
+    color: <%= ddd[0].brandcolor %>;
+}
+
+.banner-container, .panel {
+	border-left: 5px solid <%= ddd[0].brandcolor %>;
+}
+
+.index-top-banner, .navbar-inverse .navbar-nav>li>a:hover , .panel h3, a {
+	color:<%= ddd[0].brandcolor %>;
+}
+
+.banner-container {
+	border-bottom: 3px solid <%= ddd[0].brandcolor %> !important;
+}
+
+h1, h2, h3, h4, h5 {
+color: <%= ddd[0].brandcolor %>;	
+}
+</style>
+<%}%>
+
+
+
+
+
    </head>
    <body>
       <header>
