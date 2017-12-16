@@ -21,7 +21,16 @@
             <button type="submit" class="btn btn-primary">Submit</button>
          </form>
       </div>
-      <% include ../partials/twitter-sidebar %>
+	  <% include ../partials/twitter-sidebar %>
+	  
+	  <% if(ddd[0].email != '') { %>
+	  <div class="col-md-8">
+	  <h2>Having trouble?</h2>
+		<p>If you are having trouble submitting the above contact form, please feel free to email us <a href="mailto:<%= ddd[0].email %>"><%= ddd[0].email %></a>. 
+	  </div>
+	  <% } %>
+      
    </section>
+   
 </main>
 <% include ../partials/footer %>

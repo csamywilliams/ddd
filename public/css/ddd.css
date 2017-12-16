@@ -61,6 +61,10 @@ li a:hover {color:silver;}
 	background-color: #fff;
 }
 
+.panel.twitter {
+    padding-left: 20px;
+}
+	
 .panel h3 {
 	margin-top:0;
 	padding-left:20px;
@@ -84,8 +88,6 @@ li a:hover {color:silver;}
     content: '\f1ad';
     margin:0 5px 0 -15px;
 }
-
-
 .time ul { padding-left:20px; list-style:none; }
 .time li { margin-bottom:10px; }
 .time li:before {    
