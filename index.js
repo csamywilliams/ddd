@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const router = express.Router();
+//const router = express.Router();
+let router = require('express').Router();
+
 const favicon = require('serve-favicon')
 const path = __dirname + '/views/pages/';
 const route = require('path')
@@ -18,9 +20,33 @@ router.use('/:client', (req,res,next) => {
   next();
 });
 
-router.get('/', (req, res) => {
-  res.render('pages/index');
+
+var fs = require("fs"),
+    json;
+
+function readJsonFileSync(filepath, encoding){
+
+    if (typeof (encoding) == 'undefined'){
+        encoding = 'utf8';
+    }
+    var file = fs.readFileSync(filepath, encoding);
+    return JSON.parse(file);
+}
+
+function getConfig(file){
+
+    var filepath = __dirname + '/' + file;
+    return readJsonFileSync(filepath);
+}
+
+router.get('/', function(req, res, next) {
+	let siteInfo = getConfig('config.json');
+	//console.log(siteInfo); //used to debug and see config being sent
+  res.render('pages/index', { ddd: siteInfo });
 });
+
+module.exports = router;
+
 
 router.post('/form', function(req, res) {
   console.log(req.body.fullname);

@@ -1,18 +1,22 @@
 <div class="col-md-4">
             <div class="panel">
-                <h3>Saturday, March 2018</h3>
+                <h3><%= ddd[0].date %></h3>
                 <ul>
-                    <li>Swansea Grand Theatre</li>
-                    <li>9am - 5pm</li>
+                    <li><%= ddd[0].venue %></li>
+                    <li><%= ddd[0].time %></li>
                 </ul>
             </div>
 
             <div class="panel">
                 <h3>Important Dates</h3>
                 <ul>
-                    <li>Submissions open</li>
-                    <li>Registrations open</li>
-                    <li>Submissions closed</li>
+				
+				<li>Submissions open: <%= ddd[0].dates.cfpopen %></li>
+	<li>Submissions closed: <%= ddd[0].dates.cfpclose %></li>
+	<li>Voting open: <%= ddd[0].dates.votingopen %></li>
+	<li>Voting closed: <%= ddd[0].dates.votingclose %></li>
+	<li>Registration open: <%= ddd[0].dates.registrationopen %></li>
+	
                 </ul>
             </div>
         </div>

@@ -3,7 +3,8 @@
    <head>
       <!-- views/partials/head.ejs -->
       <meta charset="UTF-8">
-      <title>DDDWales 2018</title>
+      <title><%= ddd[0].title %></title>
+	  <meta name="description" content="<%= ddd[0].description %>">
       <!-- CSS (load bootstrap from a CDN) -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +14,22 @@
       <link rel="stylesheet" type="text/css" href="css/ddd.css" />
 	  <!-- Contact form javascript file -->
       <script type="text/javascript" src="js/contact.js"></script>
+	  
+	  <% if(ddd[0].googleanalytics != '') { %>	
+		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', '<%= ddd[0].googleanalytics %>');
+</script>
+	  <%}%>
    </head>
    <body>
       <header>
          <div class="container">
-            <a href="/"><img src="images/DDD-Wales-Dragon-Logo.png" class="logo"></a>
+            <a href="/"><img src="images/<%= ddd[0].logo %>" class="logo"></a>
          </div>
          <nav class="navbar navbar-inverse">
             <div class="container">

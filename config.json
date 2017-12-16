@@ -1,0 +1,22 @@
+[
+	{
+	  "title": "DDD Wales 2018",
+	  "description": "DDD Wales, the free community conference, is launching March 2018 in Swansea.",
+	  "logo": "DDD-Wales-Dragon-Logo.png",
+	  "copyright": "© Copyright 2017 DDDWales. All rights reserved.",
+	  "venue": "Swansea Grand Theatre",
+	  "date": "Saturday, March 2018",
+	  "time": "9am - 5pm",
+	  "email": "hello@dddwales.co.uk",
+	  "twitter": "dddwales",
+	  "facebook": "dddwales",
+	  "googleanalytics": "UA-12345678-1",
+	  "dates": {
+		"cfpopen": "01/01/2018",
+		"cfpclose": "01/01/2018",
+		"votingopen": "01/01/2018",
+		"votingclose": "01/01/2018",
+		"registrationopen": "06/02/2018"
+		}
+	}
+]
