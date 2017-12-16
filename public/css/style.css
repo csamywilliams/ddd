@@ -97,3 +97,9 @@ footer {
     background-color: #DA251C;
     border-color: #DA251C;
 }
+
+.btn-primary:hover {
+    background-color: white;
+    border-color: #DA251C;
+    color: #DA251C;
+}
