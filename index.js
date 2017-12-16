@@ -56,7 +56,8 @@ router.post('/form', function(req, res) {
 
 router.get('/:client', (req, res) => {
     let client = req.params.client;
-    res.render('pages/' + client);
+	let siteInfo = getConfig('config.json');
+    res.render('pages/' + client, { ddd: siteInfo });
 });
   
 app.use("/", router);

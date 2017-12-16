@@ -6,6 +6,10 @@
 	letter-spacing: 2px;
 }
 
+.notification-bar {
+	 text-transform: uppercase;
+}
+
 .navbar {
     margin-bottom: 0px;
 	color:white;
