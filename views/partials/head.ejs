@@ -25,6 +25,16 @@
   gtag('config', '<%= ddd[0].googleanalytics %>');
 </script>
 	  <%}%>
+	  
+	  <% if(ddd[0].banner != '') {%>
+	  <style>
+	  .banner {
+     background-image: url(/images/<%= ddd[0].banner %>);
+}
+</style>
+	  
+	  
+	  <%}%>
    </head>
    <body>
       <header>
