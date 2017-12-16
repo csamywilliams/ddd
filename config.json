@@ -15,14 +15,14 @@
 	  "city" : "Swansea",
 	  "country": "Wales",
 	  "date": "Saturday, March 2018",
-	  "time": "9am - 5pm",
+	  "time": "9:00am - 5:00pm",
 	  "notification": "DDDWALES - COMING SOON - MARCH 2018",
 	  "dates": {
-		"cfpopen": "01/01/2018",
-		"cfpclose": "01/01/2018",
-		"votingopen": "01/01/2018",
-		"votingclose": "01/01/2018",
-		"registrationopen": "06/02/2018"
+		"cfpopen": "Monday, January 1st 2018",
+		"cfpclose": "Wednesday, January 31st 2018",
+		"votingopen": "Thursday, February 1st 2018",
+		"votingclose": "Wednesday, 28th February 2018",
+		"registrationopen": "Thursday, 1st March 2018"
 		}
 	}
 ]

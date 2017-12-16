@@ -1,21 +1,23 @@
 <div class="col-md-4">
             <div class="panel">
                 <h3><%= ddd[0].date %></h3>
-                <ul>
-                    <li><%= ddd[0].venue %></li>
-                    <li><%= ddd[0].time %></li>
+                <ul class="venue">
+                    <li>Venue:<br><%= ddd[0].venue %></li>
+                </ul>
+				<ul class="time">
+                    <li>Time:<br><%= ddd[0].time %></li>
                 </ul>
             </div>
 
             <div class="panel">
                 <h3>Important Dates</h3>
-                <ul>
+                <ul class="dates">
 				
-				<li>Submissions open: <%= ddd[0].dates.cfpopen %></li>
-	<li>Submissions closed: <%= ddd[0].dates.cfpclose %></li>
-	<li>Voting open: <%= ddd[0].dates.votingopen %></li>
-	<li>Voting closed: <%= ddd[0].dates.votingclose %></li>
-	<li>Registration open: <%= ddd[0].dates.registrationopen %></li>
+				<li>Submissions open:<br> <%= ddd[0].dates.cfpopen %></li>
+	<li>Submissions closed:<br> <%= ddd[0].dates.cfpclose %></li>
+	<li>Voting open:<br> <%= ddd[0].dates.votingopen %></li>
+	<li>Voting closed:<br> <%= ddd[0].dates.votingclose %></li>
+	<li>Registration open:<br> <%= ddd[0].dates.registrationopen %></li>
 	
                 </ul>
             </div>

@@ -68,6 +68,32 @@ li a:hover {color:silver;}
 	color:#da251c;
 }
 
+.dates ul { padding-left:20px; list-style:none; }
+.dates li { margin-bottom:10px; }
+.dates li:before {    
+    font-family: 'FontAwesome';
+    content: '\f073';
+    margin:0 5px 0 -15px;
+}
+
+
+.venue ul { padding-left:20px; list-style:none; }
+.venue li { margin-bottom:10px; }
+.venue li:before {    
+    font-family: 'FontAwesome';
+    content: '\f1ad';
+    margin:0 5px 0 -15px;
+}
+
+
+.time ul { padding-left:20px; list-style:none; }
+.time li { margin-bottom:10px; }
+.time li:before {    
+    font-family: 'FontAwesome';
+    content: '\f017';
+    margin:0 5px 0 -15px;
+}
+
 a {
 	color:#da251c;
 }

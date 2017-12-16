@@ -79,6 +79,7 @@ footer {
     height: 40%;
 }
 
+
 .banner {
     height: 100%;
     background-image: url(/images/DDD-Wales-Banner.png);
@@ -102,4 +103,8 @@ footer {
     background-color: white;
     border-color: #DA251C;
     color: #DA251C;
+}
+
+li {
+    padding: 5px 0px 5px 0px;
 }
