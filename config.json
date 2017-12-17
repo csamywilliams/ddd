@@ -1,28 +1,26 @@
-[
-	{
-	  "ddd": "Wales",
-	  "email": "hello@dddwales.co.uk",
-	  "twitter": "dddcymru",
-	  "facebook": "dddwales",
-	  "title": "DDD Wales 2018",
-	  "description": "DDD Wales, the free community conference, is launching March 2018 in Swansea.",
-	  "copyright": "© Copyright 2017 DDDWales. All rights reserved.",
-	  "googleanalytics": "UA-12345678-1",
-	  "logo": "DDD-Wales-Dragon-Logo.png",
-	  "banner": "DDD-Wales-Banner.png",
-	  "brandcolor": "#DA251C",
-	  "venue": "Swansea Grand Theatre",
-	  "city" : "Swansea",
-	  "country": "Wales",
-	  "date": "Saturday March 2018",
-	  "time": "9:00am - 5:00pm",
-	  "notification": "DDDWALES - COMING SOON - MARCH 2018",
-	  "dates": {
-		"cfpopen": "Monday, January 1st 2018",
-		"cfpclose": "Wednesday, January 31st 2018",
-		"votingopen": "Thursday, February 1st 2018",
-		"votingclose": "Wednesday, 28th February 2018",
-		"registrationopen": "Thursday, 1st March 2018"
-		}
-	}
-]
+[{
+    "ddd": "Wales",
+    "email": "hello@dddwales.co.uk",
+    "twitter": "dddcymru",
+    "facebook": "dddwales",
+    "title": "DDD Wales 2018",
+    "description": "DDD Wales, the free community conference, is launching March 2018 in Swansea.",
+    "copyright": "© Copyright 2017 DDDWales. All rights reserved.",
+    "googleanalytics": "UA-12345678-1",
+    "logo": "DDD-Wales-Dragon-Logo.png",
+    "banner": "DDD-Wales-Banner.png",
+    "brandcolor": "#DA251C",
+    "venue": "Swansea Grand Theatre",
+    "city": "Swansea",
+    "country": "Wales",
+    "date": "Saturday March 2018",
+    "time": "9:00am - 5:00pm",
+    "notification": "DDDWALES - COMING SOON - MARCH 2018",
+    "dates": {
+        "cfpopen": "Monday, January 1st 2018",
+        "cfpclose": "Wednesday, January 31st 2018",
+        "votingopen": "Thursday, February 1st 2018",
+        "votingclose": "Wednesday, 28th February 2018",
+        "registrationopen": "Thursday, 1st March 2018"
+    }
+}]
