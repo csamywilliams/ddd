@@ -8,13 +8,17 @@
 		 
 		 <div class="sponsor-list">
 		 
-		 <hr>
+         <hr>
+     
 		 <% if(sponsors.length > 0) { %>
-		 <h2>Special thanks to our sponsors</h2>
+         <h2>Special thanks to our sponsors</h2>
+            
 		 
 		 <% } %>
 		 
-		  <% for(let i = 0; i < sponsors.length; i++) { %>
+          <% for(let i = 0; i < sponsors.length; i++) { %>
+
+        
         <div class="sponsor">
 		
             <a href="<%= sponsors[i].link %>"><img src="images/sponsors/<%= sponsors[i].image %>" class="sponsor-logo" alt="sponsor logo"></a>
