@@ -3,10 +3,11 @@ const app = express();
 let router = require('express').Router();
 global.dddwales = {};
 
-const favicon = require('serve-favicon')
+const favicon = require('serve-favicon');
 const path = __dirname + '/views/pages/';
-const route = require('path')
+const route = require('path');
 
+const mail = require('./mail');
 const bodyParser = require('body-parser');
 
 const dbconn = require('./connect');
@@ -44,38 +45,39 @@ function getConfig(file){
     return readJsonFileSync(filepath);
 }
 
+function getSiteInfo() {
+    dddwales['siteInfo'] = getConfig('config.json');
+}
+
 router.get('/', function(req, res, next) {
-	let siteInfo = getConfig('config.json');
-	let sponsorInfo = getConfig('sponsors.json');
-	//console.log(siteInfo); //used to debug and see config being sent
-  res.render('pages/index', { ddd: siteInfo, sponsors: sponsorInfo });
+
+    getSiteInfo();
+     res.render('pages/index', { ddd: dddwales.siteInfo, sponsors: dddwales.sponsors });
 });
 
 module.exports = router;
 
 
 router.post('/form', function(req, res) {
-  contact.saveEntry(dbconn.getPool(), req.body);
+    getSiteInfo();
+
+    mail.sendMail(req.body, res, { ddd: dddwales.siteInfo, sponsors: dddwales.sponsors });
 });
 
 router.get('/sponsors', (req, res) => {
     let client = req.params.client;
-	let siteInfo = getConfig('config.json');
-    
-    let pageInfo = {
-        ddd: siteInfo,
-        sponsors: dddwales.sponsors  
-    };
 
-    res.render('pages/sponsors', pageInfo);
+    getSiteInfo();
+
+    res.render('pages/sponsors', { ddd: dddwales.siteInfo, sponsors: dddwales.sponsors });
 });
 
 router.get('/:client', (req, res) => {
     let client = req.params.client;
-	let siteInfo = getConfig('config.json');
-	let sponsorInfo = getConfig('sponsors.json');
+    
+    getSiteInfo();
 
-    res.render('pages/' + client, { ddd: siteInfo, sponsors: sponsorInfo });
+    res.render('pages/' + client, { ddd: dddwales.siteInfo, sponsors: dddwales.sponsors});
 });
   
 app.use("/", router);

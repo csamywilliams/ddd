@@ -3,6 +3,14 @@
    <section class="container content">
       <div class="col-md-8">
          <h1>Contact</h1>
+         <% if(dddwales.hasOwnProperty('contactFormError') && dddwales.contactFormError === true) { %>
+          <p class="notification bg-danger">There was an error sending the form, please try again. </p>
+         <% } %>
+         <% if(dddwales.hasOwnProperty('contactFormSuccess') && dddwales.contactFormSuccess === true) { %>
+         <p class="notification bg-success">
+            Form submitted successfully, we will be in touch shortly.
+         </p>
+         <% } %>
          <p>Please fill in the below form and we'll get back to you as soon as possible.</p>
          <form id="contact" method="post" action="/form/" data-parsley-validate>
             <div class="form-group">
