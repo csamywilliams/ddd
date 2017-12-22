@@ -17,6 +17,7 @@
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.5",
     "express": "^4.16.2",
+    "express-fileupload": "^0.3.0",
     "express-validator": "^4.3.0",
     "jquery": "^3.2.1",
     "mysql": "^2.15.0",
