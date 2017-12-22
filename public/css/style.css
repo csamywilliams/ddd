@@ -99,7 +99,10 @@ footer {
     border-color: #DA251C;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:hover {
     background-color: white;
     border-color: #DA251C;
     color: #DA251C;
