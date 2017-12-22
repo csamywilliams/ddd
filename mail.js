@@ -28,13 +28,20 @@ var Mail = function() {
             // send mail with defined transport object
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
-                    dddwales['contactFormError'] = true;
+                    dddwales['contactForm'] = {
+                        message: "There was a problem sending the form. Please try again.",
+                        messageCls: "bg-danger"   
+                    };
                     res.redirect('/contact');
                     return console.log(error);
                 }
                 console.log('Message sent: %s', info.messageId);
 
-                dddwales['contactFormSuccess'] = true;
+                dddwales['contactForm'] = {
+                    message: "Message sent successfully, thank you. We will be in contact shortly.",
+                    messageCls: "bg-success"   
+                };
+
                 res.redirect('/contact');
             });
 
