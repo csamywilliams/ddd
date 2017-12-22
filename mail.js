@@ -20,7 +20,7 @@ var Mail = function() {
             
             let mailOptions = {
                 from: form.email, 
-                to: 'amyjenkins365@googlemail.com', 
+                to: "hello@dddwales.com", 
                 subject: 'Contact form submission', 
                 html:  body
             };
