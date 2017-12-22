@@ -82,9 +82,9 @@ router.get('/:client', (req, res) => {
   
 app.use("/", router);
 
-app.use('*', (req, res) => {
-  //res.sendFile(path + "404.html");
-    res.render('pages/404')
+app.use((err, req, res, next) => {
+    getSiteInfo();
+    res.render('pages/404', { ddd: dddwales.siteInfo});
 });
 
 app.listen(3000, () => {
