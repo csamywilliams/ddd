@@ -1,0 +1,170 @@
+$primary-red: #DA251C;
+$white: #FFF;
+$stone-grey: #d9d9d9;
+
+$base-font: 'Raleway', sans-serif;
+
+html, body {
+    font-family: $base-font;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+ul, p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+h1 {
+    color: $primary-red;
+}
+
+h2 {
+    font-size: 22px;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+label {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+small {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+footer {
+    width: 100%;
+    background-color: $primary-red;
+    color: $white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.content {
+    padding: 2% 0 ;
+}
+
+
+.icon {
+    height: 30px;
+    width: 30px;
+    padding: 0 1%;
+}
+
+.main-banner {
+    height: 400px;
+
+}
+
+.index-top-banner {
+    width: 100%;
+    background-color: $primary-red;
+    height: 40px;
+    color: $white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.small-text {
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 40%;
+}
+
+.banner {
+    height: 100%;
+    background-image: url(/images/DDD-Wales-Banner.png);
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.panel {
+    background-color: $stone-grey;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+.btn-primary {
+    background-color: $primary-red;
+    border-color: $primary-red;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:hover {
+    background-color: $white;
+    border-color: $primary-red;
+    color: $primary-red;
+}
+
+li {
+    padding: 5px 0px 5px 0px;
+}
+
+.notification {
+    padding: 1%;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+
+/*****************************************
+  upload button styles
+******************************************/
+.file-upload {
+	position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.file-upload__label {
+    width: 100px;
+    display: block;
+    padding: 1rem;
+    background-color: $stone-grey;
+    border-color: $stone-grey;
+    border-radius: 4px;
+    color: $white;
+  //transition: background .3s;
+  
+  &:hover {
+     cursor: pointer;
+     background-color: white;
+     border-color: $primary-red;
+     color: $primary-red;
+  }
+}
+    
+.file-upload__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.file-upload__display {
+    width: 40%;
+}

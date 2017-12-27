@@ -22,10 +22,12 @@
                 <label for="title">Talk title</label>
                 <input class="form-control" id="title" name="title" placeholder="Enter talk title" required>
             </div>
-            <div class="form-group">
-                <label for="avatar">Avatar</label>
-                <input class="form-control file" id="avatar" name="avatar" aria-describedby="uploadHelp" placeholder="Upload photo of yourself" type="file">
-                <small id="uploadHelp" class="form-text text-muted">Recommended image size: no larger than 150px x 150px</small>   
+            <div class="form-group file-upload" > 
+                <input class="form-control js-file-upload-display file-upload__display" id="avatar-display" placeholder="Choose File" disabled="disabled" />
+                <label for="avatar" class="file-upload__label">
+                    <span>Upload</span>
+                    <input class="form-control file-upload__input" id="avatar" name="avatar" aria-describedby="uploadHelp" placeholder="Upload photo of yourself" type="file">
+                </label>
             </div>
             <div class="form-group">
                <label for="talk-summary">Brief</label>
@@ -41,3 +43,19 @@
    </section>
 </main>
 <% include ../partials/footer %>
+
+<script>
+    document.getElementById("avatar").onchange = function () {
+
+        let displayInput = document.getElementById("avatar-display");
+        let filepath = this.value;
+
+        let filename = getFileName(filepath);
+        
+        displayInput.value = filename;
+    };
+
+    function getFileName(path) {
+        return path.match(/[-_\w]+[.][\w]+$/i)[0];
+    }
+</script>

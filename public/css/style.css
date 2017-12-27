@@ -1,121 +1,134 @@
 html, body {
-    font-family: 'Raleway', sans-serif;
-}
+  font-family: "Raleway", sans-serif; }
 
 body {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 ul, p {
-    font-size: 14px;
-    font-size: 1.4rem;
-}
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 h1 {
-    color: #DA251C;
-}
+  color: #DA251C; }
 
 h2 {
-    font-size: 22px;
-    font-size: 2.2rem;
-}
+  font-size: 22px;
+  font-size: 2.2rem; }
 
 h3 {
-    font-size: 18px;
-    font-size: 1.8rem;
-}
+  font-size: 18px;
+  font-size: 1.8rem; }
 
 label {
-    font-size: 14px;
-    font-size: 1.4rem;
-}
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 small {
-    font-size: 12px;
-    font-size: 1.2rem;
-}
+  font-size: 12px;
+  font-size: 1.2rem; }
 
 footer {
-    width: 100%;
-    background-color: #DA251C;
-    color: white;
-    text-align: center;
-    padding-top: 1%;
-}
+  width: 100%;
+  background-color: #DA251C;
+  color: #FFF;
+  text-align: center;
+  padding-top: 1%; }
 
 .content {
-    padding: 2% 0 ;
-}
-
+  padding: 2% 0; }
 
 .icon {
-    height: 30px;
-    width: 30px;
-    padding: 0 1%;
-}
+  height: 30px;
+  width: 30px;
+  padding: 0 1%; }
 
 .main-banner {
-    height: 400px;
-
-}
+  height: 400px; }
 
 .index-top-banner {
-    width: 100%;
-    background-color: #DA251C;
-    height: 40px;
-    color: white;
-    text-align: center;
-    padding-top: 1%;
-}
+  width: 100%;
+  background-color: #DA251C;
+  height: 40px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 1%; }
 
 .small-text {
-    font-size: 12px;
-    font-size: 1.2rem;
-    padding-bottom: 2px;
-}
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding-bottom: 2px; }
 
 .banner-container {
-    width: 100%;
-    height: 40%;
-}
-
+  width: 100%;
+  height: 40%; }
 
 .banner {
-    height: 100%;
-    background-image: url(/images/DDD-Wales-Banner.png);
-    background-size:     cover;                    
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
+  height: 100%;
+  background-image: url(/images/DDD-Wales-Banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .panel {
-    background-color: #d9d9d9;
-    padding: 10px;
-    margin-top: 10%;
-}
+  background-color: #d9d9d9;
+  padding: 10px;
+  margin-top: 10%; }
 
 .btn-primary {
-    background-color: #DA251C;
-    border-color: #DA251C;
-}
+  background-color: #DA251C;
+  border-color: #DA251C; }
 
-.btn-primary:hover, 
+.btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:active:hover {
-    background-color: white;
-    border-color: #DA251C;
-    color: #DA251C;
-}
+  background-color: #FFF;
+  border-color: #DA251C;
+  color: #DA251C; }
 
 li {
-    padding: 5px 0px 5px 0px;
-}
+  padding: 5px 0px 5px 0px; }
 
 .notification {
-    padding: 1%;
-}
+  padding: 1%; }
 
 .img-center {
-    margin: 0 auto;
-}
+  margin: 0 auto; }
+
+/*****************************************
+  upload button styles
+******************************************/
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px; }
+
+.file-upload__label {
+  width: 100px;
+  display: block;
+  padding: 1rem;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+  border-radius: 4px;
+  color: #FFF; }
+  .file-upload__label:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: #DA251C;
+    color: #DA251C; }
+
+.file-upload__input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.file-upload__display {
+  width: 40%; }
+
+/*# sourceMappingURL=style.css.map */
