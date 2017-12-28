@@ -56,3 +56,9 @@ typings/
 
 # dotenv environment variables file
 .env
+
+#sass map files
+.map
+.sass-cache
+.sass-cache/
+*.css.map

@@ -132,24 +132,23 @@ li {
 .file-upload {
 	position: relative;
     overflow: hidden;
-    margin: 10px;
+    width: 60%;
 }
 
 .file-upload__label {
-    width: 100px;
-    display: block;
+    width: 70px;
     padding: 1rem;
-    background-color: $stone-grey;
+    background-color: $primary-red;
     border-color: $stone-grey;
     border-radius: 4px;
     color: $white;
-  //transition: background .3s;
+    float: right;
   
   &:hover {
-     cursor: pointer;
-     background-color: white;
-     border-color: $primary-red;
-     color: $primary-red;
+    cursor: pointer;
+    background-color: white;
+    color: $primary-red;
+    border: 1px $primary-red solid;
   }
 }
     
@@ -166,5 +165,17 @@ li {
 }
 
 .file-upload__display {
-    width: 40%;
+    display: inline;
+    width: 60%;
+    margin-top: 4px;
+}
+
+.btn-remove {
+    float: right;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.hidden {
+    display: none;
 }
